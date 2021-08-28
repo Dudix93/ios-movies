@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="movies_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="City Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P42-nD-dJU">
+                                <rect key="frame" x="150.5" y="74" width="113" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.55294117647058827" green="0.76862745098039209" blue="0.94901960784313721" alpha="0.76574686820933358" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="poster-Island" highlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oWh-8h-NiD">
+                                <rect key="frame" x="7" y="134" width="400" height="382"/>
+                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xxp-Lk-EPT">
+                                <rect key="frame" x="135.5" y="586" width="143.5" height="26"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Weather Label">
+                                        <attributes>
+                                            <color key="NSColor" red="0.55294117647058827" green="0.76862745098039209" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="23"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wuP-RJ-pm3">
+                                <rect key="frame" x="179.5" y="648" width="55" height="63"/>
+                                <color key="backgroundColor" red="0.20784313725490194" green="0.50196078431372548" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.55294117647058827" green="0.76862745098039209" blue="0.94901960784313721" alpha="0.76574686820933358" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" systemColor="linkColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n7X-Cn-pEm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.12156862745098039" green="0.29803921568627451" blue="0.4392156862745098" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="P42-nD-dJU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2hZ-nj-37Z"/>
+                            <constraint firstItem="wuP-RJ-pm3" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Xxp-Lk-EPT" secondAttribute="bottom" priority="750" constant="30" id="9r4-Oh-DEI"/>
+                            <constraint firstItem="oWh-8h-NiD" firstAttribute="top" relation="greaterThanOrEqual" secondItem="P42-nD-dJU" secondAttribute="bottom" priority="750" constant="30" id="Axv-FS-0df"/>
+                            <constraint firstItem="oWh-8h-NiD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LS2-sZ-1UV"/>
+                            <constraint firstItem="Xxp-Lk-EPT" firstAttribute="top" relation="greaterThanOrEqual" secondItem="oWh-8h-NiD" secondAttribute="bottom" priority="750" constant="30" id="Srj-vZ-2xs"/>
+                            <constraint firstItem="P42-nD-dJU" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Xci-Pq-E0C"/>
+                            <constraint firstItem="Xxp-Lk-EPT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fsO-Ks-Pl3"/>
+                            <constraint firstItem="wuP-RJ-pm3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hZl-3W-uAV"/>
+                            <constraint firstItem="Xxp-Lk-EPT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hpl-md-8mo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cityLabel" destination="P42-nD-dJU" id="w2G-TT-ywv"/>
+                        <outlet property="weatherIconImageView" destination="oWh-8h-NiD" id="Jqn-pp-K8I"/>
+                        <outlet property="weatherStatusLabel" destination="Xxp-Lk-EPT" id="x1O-Le-i5c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="76.339285714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="poster-Island" width="400" height="533"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
